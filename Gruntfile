@@ -1,0 +1,24 @@
+modile.export = function(grunt) {
+  grunt.initConfig({
+    sass: {                                 // Task
+        dist: {                             // Target
+            files: {                        // Dictionary of files
+                'app.css': 'app.scss'     // 'destination': 'source'
+            }
+        },
+        dev: {                              // Another target
+            options: {                      // Dictionary of render options
+                includePaths: [
+                    'bower_components/foundation'
+                ]
+            },
+            files: {
+                'main.css': 'main.scss'
+            }
+        }
+    }
+});
+
+grunt.loadNpmTasks('grunt-sass');
+grunt.registerTask('default', ['sass']);
+}

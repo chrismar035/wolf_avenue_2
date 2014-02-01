@@ -1,4 +1,9 @@
 !!!
 %head
+  %meta{ name: "viewport", content: "width: device-width, initial-scale: 1.0" }
+  %link{ rel: "stylesheet", href: "scss/app.css" }
+  %script{ src: "bower_components/modernizr/modernizr.js" }
 %body
+  = "{% haml header.haml %}"
+  = "{% haml topbar.haml %}"
   = "{{ content }}"
