@@ -1,3 +1,5 @@
-name: Your New Jekyll Site
+name: Wolf Avenue
 markdown: redcarpet
 pygments: true
+
+exclude: ['Gemfile', 'Gemile.lock']
